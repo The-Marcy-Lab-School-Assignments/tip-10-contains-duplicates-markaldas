@@ -12,7 +12,19 @@
  */
 
 const containsDuplicate = (nums) => {
-  //write your code here
+  const freq = {} // is going to hold the elements in the arr and store a value to it.
+  for (let i = 0; i < nums.length; i++) { // iterating through the arr
+    const num = nums[i]; //holding the value of the element
+    if (freq[num]) {
+      freq[num]++
+      return true;
+    } else {
+      freq[num] = 1
+      false;
+    }
+  }
+
+
 };
 
 // Export the function for testing
